@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/grid_bgSize"
+        android:layout_height="@dimen/grid_bgSize"
+        android:background="@drawable/popwindow"
+        android:layout_centerInParent="true"/>
+    
+    <TextView 
+        android:id="@+id/tv_keshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_centerInParent="true"
+        android:text="创伤科"/>
+    
+</RelativeLayout>

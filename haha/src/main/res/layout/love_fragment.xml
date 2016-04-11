@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:fillViewport="false">
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/top_height"
+              android:layout_margin="@dimen/category_padding"
+              android:background="@drawable/order_draw" >
+
+               <ImageView
+                   android:layout_width="@dimen/head_dim"
+                   android:layout_height="@dimen/head_dim"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="@dimen/category_padding"
+                   android:background="@mipmap/d_pic2" />
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/head_dim"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="5dp"
+                   android:src="@mipmap/shaiwu_type_back_n" />
+
+               <EditText
+                   android:id="@+id/et_search"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@null"
+                   android:editable="false"
+                   android:hint="骨科"
+                   android:paddingLeft="5dp" />
+          </LinearLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/top_height"
+              android:background="@color/color_choose" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:text="选科室"
+                   android:textColor="@color/color_white"
+                   android:textSize="@dimen/top_textSize" />
+          </RelativeLayout>
+
+          <com.rjkx.lzl_os.myapp.customview.MyGridView
+              android:id="@+id/gridView_search"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="10dp"
+              android:horizontalSpacing="10dp"
+              android:numColumns="3"
+              android:verticalSpacing="10dp" />
+     </LinearLayout>
+
+</ScrollView>

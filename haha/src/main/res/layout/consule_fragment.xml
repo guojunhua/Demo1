@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_size"
+        android:paddingLeft="@dimen/category_padding">
+
+        <LinearLayout
+            android:id="@+id/ll_city"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_height"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="北京"
+                android:textSize="@dimen/category_textSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="4dp"
+                android:src="@mipmap/d_pic22" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_consul_search"
+            android:layout_width="220dp"
+            android:layout_height="@dimen/top_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ll_city"
+            android:background="@drawable/consul_search_bg"
+            android:hint="搜索 医院、医生"
+            android:textSize="@dimen/category_textSize" />
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_consul_search"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/d_pic31" />
+
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:background="@color/color_choose" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:src="@mipmap/d_pic2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/category_padding"
+            android:src="@mipmap/consule_person" />
+
+    </RelativeLayout>
+
+    <com.rjkx.lzl_os.myapp.customview.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/consul_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.rjkx.lzl_os.myapp.customview.RefreshableView>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My App</string>
+
+    <string name="top_text">了解病情  选对医生</string>
+    <string name="txt_head">首页</string>
+    <string name="txt_order">快速预约</string>
+    <string name="txt_love">医愿关爱</string>
+    <string name="txt_consul">预约会诊</string>
+    <string name="txt_mine">个人中心</string>
+
+    <string name="pickerView_cancel">取消</string>
+    <string name="pickerView_submit">确定</string>
+    <string name="pickerView_year">年</string>
+    <string name="pickerView_month">月</string>
+    <string name="pickerView_day">日</string>
+    <string name="pickerView_hours">时</string>
+    <string name="pickerView_minutes">分</string>
+    <string name="pickerView_seconds">秒</string>
+
+    <string-array name="tabs">
+        <item>病因</item>
+        <item>症状</item>
+        <item>诊断</item>
+        <item>治疗</item>
+        <item>效果</item>
+        <item>康复</item>
+        <item>复查</item>
+        <item>内容</item>
+        <item>定义</item>
+    </string-array>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="grid_bgSize">98dp</dimen>
+    <dimen name="top_height">38dp</dimen>
+    <dimen name="common_padding">20dp</dimen>
+    <dimen name="category_top">4.0dip</dimen>
+    <dimen name="category_padding">10dp</dimen>
+    <dimen name="category_size">50dp</dimen>
+    <dimen name="sickDetails_padding">6.0dip</dimen>
+    <dimen name="head_dim">25dp</dimen>
+    <dimen name="head_banner">150dp</dimen>
+    <dimen name="order_bgSize">16dp</dimen>
+    <dimen name="order_padding">12dp</dimen>
+
+    <dimen name="bottom_textSize">12sp</dimen>
+    <dimen name="category_textSize">15sp</dimen>
+    <dimen name="group_textSize">18sp</dimen>
+    <dimen name="top_textSize">20sp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerView_topBar_height">48dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerView_topBar_paddingLeft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerView_topBar_paddingRight">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerView_topBar_btn_textSize">20sp</dimen>
+    <dimen name="pickerView_topBar_title_textSize">21sp</dimen>
+</resources>

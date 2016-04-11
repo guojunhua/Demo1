@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_keShi">#FC8621</color>
+    <color name="head_bg">#EFEEEC</color>
+    <color name="color_choose">#CBCBCB</color>
+    <color name="color_bottom1">#FD8524</color>
+    <color name="color_bottom2">#ABABAB</color>
+    <color name="color_3">#06C1AE</color>
+    <!--category_tab颜色-->
+    <color name="divider">#ffdddddd</color>
+    <color name="top_category_bar_background">#ffeeeeee</color>
+    <color name="category_tab_text">#ff707070</color>
+    <color name="category_tab_text_dark">#fffafafa</color>
+    <color name="category_tab_highlight_text">#fffafafa</color>
+    <color name="category_tab_highlight_text_dark">#ffd43d3d</color>
+    <color name="category_tab_highlight_bg">#fc8621</color>
+    <color name="category_tab_highlight_dark_bg">#fffafafa</color>
+    <!--时间控件颜色-->
+    <color name="pickerView_timeBtn_nor">#057dff</color>
+    <color name="pickerView_timeBtn_pre">#c2daf5</color>
+    <color name="pickerView_bg_topBar">#f5f5f5</color>
+    <color name="pickerView_topBar_title">#000000</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+    <string-array name="colors">
+        <item>#7cd5ff</item>
+        <item>#c4db64</item>
+        <item>#feb1db</item>
+        <item>#f45454</item>
+        <item>#fbb455</item>
+        <item>#feda34</item>
+        <item>#76eec2</item>
+        <item>#f29c9f</item>
+        <item>#ac8cff</item>
+        <item>#7cd5ff</item>
+        <item>#c4db64</item>
+        <item>#feb1db</item>
+    </string-array>
+
+    <string-array name="top_colors">
+        <item >#f48a3c</item>
+        <item >#b7d440</item>
+        <item >#feda34</item>
+        <item >#ac8cff</item>
+        <item >#76eec2</item>
+        <item >#feb1db</item>
+        <item >#7cd5ff</item>
+        <item >#fbb455</item>
+        <item >#b7d440</item>
+    </string-array>
+</resources>

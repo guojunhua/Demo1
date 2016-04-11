@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/head_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_size"
+        android:background="@color/color_white"
+        android:paddingRight="@dimen/order_padding"
+        android:paddingLeft="@dimen/order_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="医保城市"
+            android:textSize="@dimen/category_textSize" />
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="请输入医保所在城市..."
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textSize="@dimen/category_textSize"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_size"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/order_padding"
+        android:paddingRight="@dimen/order_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="期望就诊城市"
+            android:textSize="@dimen/category_textSize" />
+
+        <EditText
+            android:id="@+id/et_seeCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="请输入期望就诊城市..."
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textSize="@dimen/category_textSize"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_size"
+        android:layout_marginTop="@dimen/common_padding"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/order_padding" >
+
+        <TextView
+            android:id="@+id/patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="就诊人:"
+            android:textSize="@dimen/category_textSize" />
+        <TextView
+            android:id="@+id/tv_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/patient"
+            android:text="未选择"
+            android:textSize="@dimen/category_textSize" />
+
+        <LinearLayout
+            android:id="@+id/ll_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/order_padding"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择"
+                android:layout_gravity="center"
+                android:textSize="@dimen/category_textSize"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/d_pic10"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_bgSize"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/order_padding" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_bgSize"
+            android:text="就诊时间"
+            android:textSize="@dimen/category_textSize" />
+
+        <EditText
+            android:id="@+id/pre_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="false"
+            android:layout_marginTop="@dimen/order_bgSize"
+            android:layout_toRightOf="@id/tv_time"
+            android:background="@drawable/order_bg"
+            android:gravity="end" />
+
+        <EditText
+            android:id="@+id/next_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/category_padding"
+            android:layout_marginRight="@dimen/category_padding"
+            android:editable="false"
+            android:layout_marginTop="@dimen/category_top"
+            android:layout_below="@id/pre_time"
+            android:background="@drawable/order_bg"
+            android:layout_toRightOf="@id/tv_time"
+            android:gravity="end" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_size"
+        android:layout_marginTop="@dimen/common_padding"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/order_padding"
+        android:paddingRight="@dimen/order_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确诊疾病"
+            android:textSize="@dimen/category_textSize" />
+        <EditText
+            android:id="@+id/et_sick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/category_textSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:hint="请输入疾病..."
+            android:gravity="end"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white" >
+
+        <EditText
+            android:id="@+id/et_sickDesc"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="@dimen/category_padding"
+            android:layout_toRightOf="@id/tv"
+            android:background="@drawable/order_draw"
+            android:gravity="start"
+            android:textSize="@dimen/category_textSize"
+            android:hint="请输入不适症和诊断..." />
+
+        <Button
+            android:id="@+id/ib_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:background="@drawable/jiu_top"
+            android:text="提交"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_textSize" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/order_padding"
+            android:paddingTop="@dimen/category_padding"
+            android:text="病情描述"
+            android:textSize="@dimen/category_textSize" />
+    </RelativeLayout>
+
+</LinearLayout>

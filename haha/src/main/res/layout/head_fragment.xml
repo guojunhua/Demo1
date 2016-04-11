@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/head_bg"
+        android:orientation="vertical" >
+
+        <com.rjkx.lzl_os.myapp.customview.AutoScrollViewPager
+            android:id="@+id/mVp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/head_banner" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/common_padding" >
+
+            <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/category_top"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/icon_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/head_love" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_love" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ll_left"
+                android:paddingLeft="@dimen/top_height"
+                android:text="掌上宝典 疾病全知道"
+                android:textColor="@color/color_bottom2" />
+        </RelativeLayout>
+
+        <com.rjkx.lzl_os.myapp.customview.MyGridView
+            android:id="@+id/my_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_padding"
+            android:background="@color/color_white"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:layout_marginTop="@dimen/common_padding"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/common_padding"
+                android:text="健康课堂" />
+
+            <ImageView
+                android:id="@+id/iv_morekt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/common_padding"
+                android:src="@mipmap/d_pic10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/category_top"
+                android:layout_toLeftOf="@id/iv_morekt"
+                android:text="更多" />
+        </RelativeLayout>
+
+        <com.rjkx.lzl_os.myapp.customview.MyListView
+            android:id="@+id/kt_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:layout_marginTop="@dimen/common_padding"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/common_padding"
+                android:text="骨科动态" />
+
+            <ImageView
+                android:id="@+id/iv_moredt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/common_padding"
+                android:src="@mipmap/d_pic10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/category_top"
+                android:layout_toLeftOf="@id/iv_moredt"
+                android:text="更多" />
+        </RelativeLayout>
+
+        <com.rjkx.lzl_os.myapp.customview.MyListView
+            android:id="@+id/dt_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+</ScrollView>
